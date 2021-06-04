@@ -6,7 +6,10 @@ I'm a huge fan of airbnb-lint but I disabled some rules that I think is too stri
 Feel free to also add/disable rules that you don't like! - in `.eslintrc`.
 You decide what is your rules, this is just a boilerplate. :D
 
-
+# Install first
+```bash
+npm install
+```
 # To run: 
 ```bash
 npm run dev
