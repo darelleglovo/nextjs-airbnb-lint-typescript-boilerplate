@@ -1,0 +1,59 @@
+module.exports = {
+  root: true,
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'], // Your TypeScript files extension
+      parserOptions: {
+        project: ['./tsconfig.json'], // Specify it only for TypeScript files
+      },
+    },
+  ],
+  parser: '@typescript-eslint/parser',
+  env: {
+    browser: true,
+    node: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
+    // Prettier plugin and recommended rules
+    // 'prettier/@typescript-eslint',
+    // 'plugin:prettier/recommended',
+    'plugin:why/error',
+    'airbnb-typescript',
+    'airbnb/hooks',
+  ],
+  rules: {
+    // Include .prettierrc.js rules
+    // 'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+    // 'react/prop-types': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    'react/require-default-props': [1, { ignoreFunctionalComponents: true }],
+    'react/jsx-one-expression-per-line': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.jsx'] }],
+    'react/no-unescaped-entities': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'arrow-body-style': 0,
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+};
