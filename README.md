@@ -1,8 +1,11 @@
 # Boilerplate for Next.js with Typescript and airbnb-lint setup
-- Typescript
+What's in here:
+- NextJS v9,4,2
+- React v16.13.1
+- Typescript v13.9.1
 - airbnb-lint
 
-I'm a huge fan of airbnb-lint but I disabled some rules that I think is too strict. I haven't disabled a lot yet but I will disable it along the way.
+I'm a huge fan of airbnb-lint (because it forces us to write clean and maintainable code) but I disabled some rules that I think is too strict. I haven't disabled a lot yet but I will disable it along the way.
 Feel free to also add/disable rules that you don't like! - in `.eslintrc`.
 You decide what is your rules, this is just a boilerplate. :D
 
