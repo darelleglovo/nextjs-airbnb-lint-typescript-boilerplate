@@ -1,7 +1,7 @@
 # Boilerplate for Next.js with Typescript and airbnb-lint setup
 What's in here:
-- NextJS v9,4,2
-- React v16.13.1
+- NextJS v10.2.3
+- React v17.0.1
 - Typescript v13.9.1
 - airbnb-lint
 
